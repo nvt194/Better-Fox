@@ -18,7 +18,7 @@ about:config tweaks to enhance [Mozilla Firefox](https://www.mozilla.org/en-US/f
 | [SmoothFox](https://github.com/yokoffing/Better-Fox/blob/master/SmoothFox.js) | Get Microsoft Edge-like smooth scrolling on your favorite browser. |
 | [user.js](https://github.com/yokoffing/Better-Fox/blob/master/user.js) | All the essentails. None of the breakage. Users may download this list as their own user.js. |
 
-## What's diffirent?
+## What's different?
 For some reason @yokoffing releases diffirent branches of configs before merge them into a single user.js, I prefer a single one, so we have this. This could change in the future.
 
 ## Who is this setup for?
