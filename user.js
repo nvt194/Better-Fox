@@ -168,7 +168,7 @@ user_pref("browser.newtabpage.activity-stream.telemetry", false);
 ****************************************************************************/
 
 /** MOZILLA UI ***/
-user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); #enable custom stysheets for theming
 user_pref("browser.privatebrowsing.vpnpromourl", "");
 user_pref("extensions.getAddons.showPane", false);
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
@@ -178,6 +178,9 @@ user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", fa
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
 user_pref("security.dialog_enable_delay", 0);
 user_pref("extensions.webextensions.restrictedDomains", "accounts-static.cdn.mozilla.net,accounts.firefox.com,addons.cdn.mozilla.net,api.accounts.firefox.com,content.cdn.mozilla.net,discovery.addons.mozilla.org,install.mozilla.org,oauth.accounts.firefox.com,profile.accounts.firefox.com,support.mozilla.org,sync.services.mozilla.com");
+
+// PREF: Disable Firefox accounts
+user_pref("identity.fxaccounts.enabled", true); #enable firefox account
 
 /** WARNINGS ***/
 user_pref("browser.tabs.warnOnClose", false);
@@ -197,7 +200,7 @@ user_pref("browser.newtabpage.activity-stream.discoverystream.enabled", false);
 user_pref("browser.newtabpage.activity-stream.showSponsored", false);
 user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
-user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
+user_pref("browser.newtabpage.activity-stream.feeds.topsites", true); #enable topsites
 user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
 user_pref("browser.newtabpage.activity-stream.section.highlights.includeBookmarks", false);
@@ -214,11 +217,11 @@ user_pref("extensions.pocket.oAuthConsumerKey", " ");
 user_pref("extensions.pocket.site", " ");
 
 /** DOWNLOADS ***/
-user_pref("browser.download.useDownloadDir", false);
+user_pref("browser.download.useDownloadDir", true); #use custom downloads folder
 user_pref("browser.download.manager.addToRecentDocs", false);
 
 /** VARIOUS ***/
-user_pref("browser.compactmode.show", true);
+user_pref("browser.compactmode.show", true); #show compact mode
 user_pref("browser.menu.showViewImageInfo", true);
 user_pref("browser.urlbar.suggest.engines", false);
 user_pref("browser.urlbar.suggest.topsites", false);
@@ -241,6 +244,32 @@ user_pref("editor.truncate_user_pastes", false);
 user_pref("media.videocontrols.picture-in-picture.video-toggle.has-used", true);
 user_pref("clipboard.plainTextOnly", true);
 user_pref("dom.popup_allowed_events", "click dblclick mousedown pointerdown");
+
+/****************************************************************************
+ * SmoothFox                                                                *
+ * "Faber est suae quisque fortunae."                                       *
+ * priority: smooth scrolling                                               *
+ * version: March 2021                                                      *
+ * url: https://github.com/hjstephens09/Better-Fox                          *
+ ***************************************************************************/
+
+/****************************************************************************
+ * SECTION: SMOOTH SCROLLING (OVERALL IMPROVEMENT OF DEFAULTS)              *
+****************************************************************************/
+user_pref("general.smoothScroll", true);
+user_pref("general.smoothScroll.mouseWheel.durationMaxMS", 150);
+user_pref("general.smoothScroll.mouseWheel.durationMinMS", 125);
+
+/******************************************************************************
+ * SECTION: EDGE-LIKE SMOOTH SCROLLING                                        *
+******************************************************************************/
+user_pref("general.smoothScroll", true);
+user_pref("general.smoothScroll.currentVelocityWeighting", "0.1");
+user_pref("general.smoothScroll.mouseWheel.durationMaxMS", 250); #windows value, 600 for linux
+user_pref("general.smoothScroll.mouseWheel.durationMinMS", 125); #windows value, 400 for linux
+user_pref("general.smoothScroll.stopDecelerationWeighting", "0.7"); #windows value, 0.8 for linux
+user_pref("mousewheel.min_line_scroll_amount", 25);
+user_pref("apz.overscroll.enabled", true); /*elastic overscroll*/
 
 /****************************************************************************
  * END: BETTERFOX                                                           *
