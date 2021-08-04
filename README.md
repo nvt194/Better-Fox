@@ -1,5 +1,5 @@
-# BetterFox
-about:config tweaks to enhance [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/ "Firefox Homepage"). Files are updated as needed for your [user.js](http://kb.mozillazine.org/User.js_file).
+My copy of @yokoffing 's BetterFox with few tweaks of my liking.
+about:config tweaks to enhance [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/ "Firefox Homepage"). as a single [user.js](http://kb.mozillazine.org/User.js_file).
 
 
 ## Simple goals:
@@ -18,6 +18,9 @@ about:config tweaks to enhance [Mozilla Firefox](https://www.mozilla.org/en-US/f
 | [SmoothFox](https://github.com/yokoffing/Better-Fox/blob/master/SmoothFox.js) | Get Microsoft Edge-like smooth scrolling on your favorite browser. |
 | [user.js](https://github.com/yokoffing/Better-Fox/blob/master/user.js) | All the essentails. None of the breakage. Users may download this list as their own user.js. |
 
+## What's diffirent?
+For some reason @yokoffing releases diffirent branches of configs before merge them into a single user.js, I prefer a single one, so we have this. This could change in the future.
+
 ## Who is this setup for?
 **If you want a secure, blazing fast browsing experience, and don't want to deal with breakage, this setup is for you.** My objective is to make the defaults sufficient enough for the average privacy-minded user, but remain trouble-free enough that my grandmother could use it. <strike>(That puts a whole new twist on being a foxy grandma!)</strike> Edit: Sorry for the dad joke 😓
 
@@ -29,13 +32,13 @@ Betterfox was created with a [less is more](https://medium.com/the-mission/less-
 ## Assumptions
 That being said, Betterfox does make some assumptions: 
 * **Google Safe Browsing** is removed. If you don't have other means of protection, you should remove the preferences listed for this section to leave it enabled.
-* The native **password manager** is also disabled. Betterfox assumes you use a different password manager. If you don't have something like [LastPass](https://addons.mozilla.org/en-US/firefox/addon/lastpass-password-manager/) or [Bitwarden](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/), then remove the prefs that disable this functionality.
+* The native **password manager** is also disabled. Use [LastPass](https://addons.mozilla.org/en-US/firefox/addon/lastpass-password-manager/) or [Bitwarden](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/).
 * You should have [Ghostery](https://github.com/yokoffing/Better-Fox/wiki/Ghostery) or [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) for content blocking. Using DNS-level protection like [NextDNS](https://nextdns.io/?from=xujj63g5) is highly recommended.
 * If your threat level calls for _anonymity_ and not just reasonable _privacy,_ please use the [TOR browser](https://www.torproject.org). 👍
 
 
 ## [Wiki](https://github.com/yokoffing/Better-Fox/wiki)
-Check out our [wiki](https://github.com/yokoffing/Better-Fox/wiki)!
+Check out Betterfox [wiki](https://github.com/yokoffing/Better-Fox/wiki)!
 
 
 ## Credit
