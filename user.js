@@ -282,8 +282,5 @@ user_pref("apz.overscroll.enabled", true); /*elastic overscroll*/
 /****************************************************************************
  * My theming stuffs                                                        *       
  ***************************************************************************/
-
-/****************************************************************************
- * SECTION: Enable Menu icons                                               *
-****************************************************************************/
-user_pref("svg.context-properties.content.enabled", true); 
+user_pref("browser.urlbar.suggest.calculator", true); #enable calculator on urlbar,
+user_pref("svg.context-properties.content.enabled", true); #theming stuffs,
