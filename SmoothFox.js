@@ -1,4 +1,4 @@
-//
+//Since rebased, this will not be updated anymore.
 /* Do not COPY+PASTE this file. If you do, only COPY+PASTE the user_pref itself.
  *
  * If you make changes to your about:config while the program is running, the
