@@ -12,10 +12,10 @@ about:config tweaks to enhance [Mozilla Firefox](https://www.mozilla.org/en-US/f
    
 | List      | Description |
 |:---------:|-------------|
-| [Fastfox](https://github.com/yokoffing/Better-Fox/blob/master/FastFox.js)   | Immensely increase Firefox's browsing speed. Give Chrome a run for its money!|
+| [Fastfox]   | Immensely increase Firefox's browsing speed. Give Chrome a run for its money!|
 | [SecureFox](https://github.com/yokoffing/Better-Fox/blob/master/SecureFox.js) | Remove Telemetry, Mozilla experiments, Google Safe Browsing, and search engine suggestions in URL bar. Auto-upgrade mixed content to HTTPS. Various privacy enhancements. |
-| [PeskyFox](https://github.com/yokoffing/Better-Fox/blob/master/PeskyFox.js)  | Unclutter the new tab page. Remove Pocket and form autofill. Prevent Firefox from serving annoying webpage notifications. |
-| [user.js](https://github.com/yokoffing/Better-Fox/blob/master/user.js) | All the essentails. None of the breakage. Users may download this list as their own user.js. |
+| [PeskyFox]  | Unclutter the new tab page. Remove Pocket and form autofill. Prevent Firefox from serving annoying webpage notifications. |
+| [user.js](https://github.com/nvt194/Better-Fox/blob/master/user.js) | All the essentails. None of the breakage. Users may download this list as their own user.js. |
 
 ## What's different?
 For some reason @yokoffing releases diffirent branches of configs before merge them into a single user.js, I prefer a single one, so we have this. This could change in the future.
