@@ -12,9 +12,9 @@ about:config tweaks to enhance [Mozilla Firefox](https://www.mozilla.org/en-US/f
    
 | List      | Description |
 |:---------:|-------------|
-| [Fastfox]   | Immensely increase Firefox's browsing speed. Give Chrome a run for its money!|
-| [SecureFox] | Remove Telemetry, Mozilla experiments, Google Safe Browsing, and search engine suggestions in URL bar. Auto-upgrade mixed content to HTTPS. Various privacy enhancements. |
-| [PeskyFox]  | Unclutter the new tab page. Remove Pocket and form autofill. Prevent Firefox from serving annoying webpage notifications. |
+|  Fastfox    | Immensely increase Firefox's browsing speed. Give Chrome a run for its money!|
+|  SecureFox  | Remove Telemetry, Mozilla experiments, Google Safe Browsing, and search engine suggestions in URL bar. Auto-upgrade mixed content to HTTPS. Various privacy enhancements. |
+|  PeskyFox   | Unclutter the new tab page. Remove Pocket and form autofill. Prevent Firefox from serving annoying webpage notifications. |
 | [user.js](https://github.com/nvt194/Better-Fox/blob/master/user.js) | All the essentails. None of the breakage. Users may download this list as their own user.js. |
 
 ## What's different?
