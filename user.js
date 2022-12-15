@@ -123,7 +123,7 @@ user_pref("browser.safebrowsing.downloads.remote.block_uncommon", false);
 user_pref("browser.safebrowsing.blockedURIs.enabled", false);
 
 /** MOZILLA ***/
-user_pref("identity.fxaccounts.enabled", false); #enable firefox account
+user_pref("identity.fxaccounts.enabled", false);
 user_pref("browser.tabs.firefox-view", false);
 user_pref("dom.push.enabled", false);
 user_pref("permissions.default.desktop-notification", 2);
@@ -327,8 +327,10 @@ user_pref("toolkit.scrollbox.verticalScrollDistance",                      3);//
  * START: MY OVERRIDES                                                      *
 ****************************************************************************/
 /** Enter your personal prefs below this line ***/
-user_pref("browser.urlbar.suggest.calculator", true); #enable calculator on urlbar,
-user_pref("svg.context-properties.content.enabled", true); #theming stuffs,
+user_pref("identity.fxaccounts.enabled", true); #enable firefox account,
+user_pref("browser.theme.dark-private-windows", false); #disable always using dark theme for private browsing windows
+user_pref("browser.urlbar.suggest.calculator", true); #enable calculator on urlbar
+user_pref("svg.context-properties.content.enabled", true); #theming stuffs
   
 /****************************************************************************
  * END: BETTERFOX                                                           *
