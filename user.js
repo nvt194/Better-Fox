@@ -10,7 +10,7 @@
 /****************************************************************************
  * Betterfox                                                                *
  * "Ad meliora"                                                             *
- * version: 110                                                             *
+ * version: 112                                                             *
  * url: https://github.com/nvt194/Betterfox                                 *
 ****************************************************************************/
 
@@ -51,6 +51,8 @@ user_pref("browser.cache.memory.max_entry_size", 153600);
 /** NETWORK ***/
 user_pref("network.buffer.cache.size", 262144);
 user_pref("network.buffer.cache.count", 128);
+user_pref("network.http.max-connections", 1800);
+user_pref("network.http.max-persistent-connections-per-server", 10);
 user_pref("network.ssl_tokens_cache_capacity", 32768);
 
 /****************************************************************************
@@ -63,6 +65,8 @@ user_pref("urlclassifier.trackingSkipURLs", "*.reddit.com, *.twitter.com, *.twim
 user_pref("urlclassifier.features.socialtracking.skipURLs", "*.instagram.com, *.twitter.com, *.twimg.com");
 user_pref("privacy.query_stripping.strip_list", "__hsfp __hssc __hstc __s _hsenc _openstat dclid fbclid gbraid gclid hsCtaTracking igshid mc_eid ml_subscriber ml_subscriber_hash msclkid oft_c oft_ck oft_d oft_id oft_ids oft_k oft_lk oft_sk oly_anon_id oly_enc_id rb_clickid s_cid twclid vero_conv vero_id wbraid wickedid yclid");
 user_pref("browser.uitour.enabled", false);
+user_pref("privacy.globalprivacycontrol.enabled", true);
+user_pref("privacy.globalprivacycontrol.functionality.enabled", true);
 
 /** OCSP & CERTS / HPKP ***/
 user_pref("security.OCSP.enabled", 0);
@@ -116,7 +120,6 @@ user_pref("signon.privateBrowsingCapture.enabled", false);
 user_pref("signon.autofillForms", false);
 user_pref("signon.rememberSignons", false);
 user_pref("editor.truncate_user_pastes", false);
-user_pref("layout.forms.reveal-password-context-menu.enabled", true);
 
 /** ADDRESS + CREDIT CARD MANAGER ***/
 user_pref("extensions.formautofill.addresses.enabled", false);
@@ -191,9 +194,9 @@ user_pref("browser.newtabpage.activity-stream.telemetry", false);
 ****************************************************************************/
 /** MOZILLA UI ***/
 user_pref("layout.css.prefers-color-scheme.content-override", 2);
-user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); #enable custom stysheets for theming
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("app.update.suppressPrompts", true);
-user_pref("browser.compactmode.show", true);#show compact mode
+user_pref("browser.compactmode.show", true);
 user_pref("browser.privatebrowsing.vpnpromourl", "");
 user_pref("extensions.getAddons.showPane", false);
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
@@ -210,7 +213,7 @@ user_pref("browser.privatebrowsing.enable-new-indicator", false);
 /** FULLSCREEN ***/
 user_pref("full-screen-api.transition-duration.enter", "0 0");
 user_pref("full-screen-api.transition-duration.leave", "0 0");
-user_pref("full-screen-api.warning.delay", 0);
+user_pref("full-screen-api.warning.delay", -1);
 user_pref("full-screen-api.warning.timeout", 0);
 
 /** URL BAR ***/
@@ -236,11 +239,8 @@ user_pref("browser.download.always_ask_before_handling_new_types", true);
 user_pref("browser.download.open_pdf_attachments_inline", true);
 
 /** TAB BEHAVIOR ***/
-user_pref("browser.link.open_newwindow.restriction", 0);
-user_pref("dom.disable_window_move_resize", true);
 user_pref("browser.tabs.loadBookmarksInTabs", true);
 user_pref("browser.bookmarks.openInTabClosesMenu", false);
-user_pref("dom.popup_allowed_events", "change click dblclick auxclick mousedown mouseup pointerdown pointerup notificationclick reset submit touchend contextmenu"); // reset pref; remove in v.111
 user_pref("layout.css.has-selector.enabled", true);
 
 /****************************************************************************
