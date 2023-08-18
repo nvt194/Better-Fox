@@ -10,7 +10,7 @@
 /****************************************************************************
  * Betterfox                                                                *
  * "Ad meliora"                                                             *
- * version: 113                                                             *
+ * version: 115                                                             *
  * url: https://github.com/nvt194/Betterfox                                 *
 ****************************************************************************/
 
@@ -24,7 +24,6 @@ user_pref("browser.startup.preXulSkeletonUI", false);
 
 /** EXPERIMENTAL ***/
 user_pref("layout.css.grid-template-masonry-value.enabled", true);
-user_pref("layout.css.animation-composition.enabled", true);
 user_pref("dom.enable_web_task_scheduling", true);
 
 /** GFX ***/
@@ -241,6 +240,8 @@ user_pref("browser.download.open_pdf_attachments_inline", true);
 user_pref("browser.tabs.loadBookmarksInTabs", true);
 user_pref("browser.bookmarks.openInTabClosesMenu", false);
 user_pref("layout.css.has-selector.enabled", true);
+user_pref("cookiebanners.service.mode", 2);
+user_pref("cookiebanners.service.mode.privateBrowsing", 2);
 
 /****************************************************************************
  * SECTION: SMOOTHFOX                                                       *
@@ -248,6 +249,11 @@ user_pref("layout.css.has-selector.enabled", true);
  * natural smooth scrolling by AveYo                                        *
 ****************************************************************************/
 
+/****************************************************************************
+ * SECTION: SMOOTHFOX                                                       *
+****************************************************************************/
+// visit https://github.com/yokoffing/Betterfox/blob/master/Smoothfox.js
+// Enter your scrolling prefs below this line:
 ///  NATURAL SMOOTH SCROLLING V4 "SHARP" - AveYo, 2020-2022             preset     [default]
 ///  copy into firefox/librewolf profile as user.js, add to existing, or set in about:config
 user_pref("general.smoothScroll.msdPhysics.continuousMotionMaxDeltaMS",   12);//NSS    [120]
@@ -302,12 +308,11 @@ user_pref("toolkit.scrollbox.verticalScrollDistance",                      3);//
 /****************************************************************************
  * START: MY OVERRIDES                                                      *
 ****************************************************************************/
-/** Enter your personal prefs below this line ***/
+// Enter your personal prefs below this line:
 user_pref("identity.fxaccounts.enabled", true); #enable firefox account,
 user_pref("browser.theme.dark-private-windows", false); #disable always using dark theme for private browsing windows
 user_pref("browser.urlbar.suggest.calculator", true); #enable calculator on urlbar
 user_pref("svg.context-properties.content.enabled", true); #theming stuffs
-  
 /****************************************************************************
  * END: BETTERFOX                                                           *
 ****************************************************************************/
