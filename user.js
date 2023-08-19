@@ -313,6 +313,9 @@ user_pref("identity.fxaccounts.enabled", true); #enable firefox account,
 user_pref("browser.theme.dark-private-windows", false); #disable always using dark theme for private browsing windows
 user_pref("browser.urlbar.suggest.calculator", true); #enable calculator on urlbar
 user_pref("svg.context-properties.content.enabled", true); #theming stuffs
+user_pref("widget.non-native-theme.scrollbar.style", 2); #smaller scrollbar 
+user_pref("nglayout.initialpaint.delay", 2000); #Work better with Dark Reader
+user_pref("nglayout.initialpaint.delay_in_oopif", 2000);
 /****************************************************************************
  * END: BETTERFOX                                                           *
 ****************************************************************************/
