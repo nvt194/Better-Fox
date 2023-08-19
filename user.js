@@ -316,6 +316,8 @@ user_pref("svg.context-properties.content.enabled", true); #theming stuffs
 user_pref("widget.non-native-theme.scrollbar.style", 2); #smaller scrollbar 
 user_pref("nglayout.initialpaint.delay", 2000); #Work better with Dark Reader
 user_pref("nglayout.initialpaint.delay_in_oopif", 2000);
+user_pref("xpinstall.signatures.required", false);#Install local addons 
+user_pref("xpinstall.whitelist.required", false);
 /****************************************************************************
  * END: BETTERFOX                                                           *
 ****************************************************************************/
