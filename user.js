@@ -318,25 +318,29 @@ user_pref("nglayout.initialpaint.delay", 2000); #Work better with Dark Reader
 user_pref("nglayout.initialpaint.delay_in_oopif", 2000);
 user_pref("xpinstall.signatures.required", false);#Install local addons 
 user_pref("xpinstall.whitelist.required", false);
-user_pref("network.dns.force_use_https_rr", true); #Force website to wait for HTTPS record
-user_pref("network.dns.force_waiting_https_rr", true);
-user_pref("network.dns.echconfig.enabled", true); #ECH stuffs
-user_pref("network.dns.echconfig.fallback_to_origin_when_all_failed", false);
-user_pref("network.dns.http3_echconfig.enabled", true);
-user_pref("security.tls.ech.disable_grease_on_fallback", false);
-user_pref("security.tls.ech.grease_http3", true);
-user_pref("security.tls.ech.grease_probability", 100);
 user_pref("network.dns.disableIPv6", true); #Disable IPv6
 user_pref("dom.security.https_first", true); #Force HTTPS
+user_pref("security.OCSP.enabled", 0);
+user_pref("security.tls.ech.disable_grease_on_fallback", false);#ECH stuffs
+user_pref("security.tls.ech.grease_http3", true);
+user_pref("security.tls.ech.grease_probability", 100);
+user_pref("network.dns.echconfig.enabled", true); 
+user_pref("network.dns.echconfig.fallback_to_origin_when_all_failed", false);
+user_pref("network.dns.force_use_https_rr", true); #Force website to wait for HTTPS record
+user_pref("network.dns.force_waiting_https_rr", true);
+user_pref("network.dns.http3_echconfig.enabled", true);
+user_pref("network.dnsCacheEntries", -1);
 user_pref("network.dns.skipTRR-when-parental-control-enabled", false); #TRR stuffs
+user_pref("network.http.http3.alt-svc-mapping-for-testing", "doh3.dns.nextdns.io;h3=\":443\"; quicv=\"6b3343cf,1\"");
+user_pref("network.http.http3.send_background_tabs_deprioritization", true);
+user_pref("network.http.http3.version_negotiation.enabled", true);
 user_pref("network.trr.async_connInfo", true);
 user_pref("network.trr.confirmation_telemetry_enabled", false);
+user_pref("network.trr.custom_uri", "https://doh3.dns.nextdns.io/75a58e");#Set DNS Firefox to NextDNS
 user_pref("network.trr.default_provider_uri", "https://doh3.dns.nextdns.io/75a58e");
 user_pref("network.trr.disable-ECS", false);
-user_pref("network.trr.uri", "https://doh3.dns.nextdns.io/75a58e"); #Set DNS Firefox to NextDNS
-user_pref("network.trr.custom_uri", "https://doh3.dns.nextdns.io/75a58e");
 user_pref("network.trr.mode", 3);
-user_pref("network.http.http3.alt-svc-mapping-for-testing", "doh3.dns.nextdns.io; h3=":443"; quicv="709a50c4,1", dns.google; h3=":443"; quicv="709a50c4,1""); #Enable QUICv2
+user_pref("network.trr.uri", "https://doh3.dns.nextdns.io/75a58e"); 
 /****************************************************************************
  * END: BETTERFOX                                                           *
 ****************************************************************************/
