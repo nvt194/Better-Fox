@@ -1,44 +1,69 @@
-My copy of @yokoffing 's BetterFox with few tweaks of my liking.
-about:config tweaks to enhance [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/ "Firefox Homepage"). as a single [user.js](http://kb.mozillazine.org/User.js_file).
+# 🦊 Better-Fox
+> An up-to-date, tweaked `user.js` configuration to immensely speed up and secure your Mozilla Firefox browsing experience.
 
+This is a personal fork of **@yokoffing/Betterfox**, optimized to maintain a single-file setup for seamless deployment and set-and-forget usability.
 
-## Simple goals:
-1) **Minimalism:** get what isn't needed out of the way
-2) **Efficiency:** unleash Firefox's ability to be fast and performant
-3) **Security:** sensible privacy and security without causing site breakage
+---
 
+## 🎯 Core Goals
 
-## Simple configs:
-   
-| List      | Description |
-|:---------:|-------------|
-|  Fastfox    | Immensely increase Firefox's browsing speed. Give Chrome a run for its money!|
-|  SecureFox  | Remove Telemetry, Mozilla experiments, Google Safe Browsing, and search engine suggestions in URL bar. Auto-upgrade mixed content to HTTPS. Various privacy enhancements. |
-|  PeskyFox   | Unclutter the new tab page. Remove Pocket and form autofill. Prevent Firefox from serving annoying webpage notifications. |
-| [user.js](https://github.com/nvt194/Better-Fox/blob/master/user.js) | All the essentails. None of the breakage. Users may download this list as their own user.js. |
+*   **Minimalism:** Strip away unnecessary bloat, components, and telemetry that clutter the browser.
+*   **Efficiency:** Unleash Firefox's full engine potential to achieve blazing-fast speeds.
+*   **Security:** Enforce practical privacy and security baselines without causing web page breakage.
 
-## What's different?
-For some reason @yokoffing releases diffirent branches of configs before merge them into a single user.js, I prefer a single one, so we have this. This could change in the future.
+---
 
-## Who is this setup for?
-**If you want a secure, blazing fast browsing experience, and don't want to deal with breakage, this setup is for you.** My objective is to make the defaults sufficient enough for the average privacy-minded user, but remain trouble-free enough that my grandmother could use it. <strike>(That puts a whole new twist on being a foxy grandma!)</strike> Edit: Sorry for the dad joke 😓
+## ⚙️ Configuration Breakdown
 
-## about:Privacy
-My guiding principle was: "If it breaks it, it doesn't make it!" So things like WebGL and DRM are still enabled, and you won't find a setting like `privacy.resistFingerprinting` mentioned here. BetterFox is designed to set-and-forget, not to troubleshoot and tinker. You can compare different user.js files [here](https://yokoffing.github.io/compare-user.js/).
+| Feature Pack | Main Objective |
+| :--- | :--- |
+| **⚡ Fastfox** | Immensely increases Firefox's rendering, connection, and browsing speed. |
+| **🛡️ SecureFox** | Removes Telemetry, Mozilla experiments, Google Safe Browsing, and URL bar suggestions. Auto-upgrades to HTTPS. |
+| **🧹 PeskyFox** | Unclutters the new tab page, removes Pocket/form autofill, and blocks annoying website notifications. |
+| **📄 user.js** | Merges all essential preferences into a single, cohesive file for easy download. |
 
-Betterfox was created with a [less is more](https://medium.com/the-mission/less-is-more-the-minimum-effective-dose-e6d56625931e) mentality. Most repos I've encountered have niche privacy and security concerns with little regard for speed, annoyances, or mainstream use. The average user doesn't need all `user_prefs` altered to get the results they want.
+---
 
-## Assumptions
-That being said, Betterfox does make some assumptions: 
-* **Google Safe Browsing** is removed. If you don't have other means of protection, you should remove the preferences listed for this section to leave it enabled.
-* The native **password manager** is also disabled. Use [LastPass](https://addons.mozilla.org/en-US/firefox/addon/lastpass-password-manager/) or [Bitwarden](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/).
-* You should have [Ghostery](https://github.com/yokoffing/Better-Fox/wiki/Ghostery) or [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) for content blocking. Using DNS-level protection like [NextDNS](https://nextdns.io/?from=xujj63g5) is highly recommended.
-* If your threat level calls for _anonymity_ and not just reasonable _privacy,_ please use the [TOR browser](https://www.torproject.org). 👍
+## 🔍 What's Different in This Fork?
 
+Unlike the upstream repository which frequently balances different experimental configurations across multiple branches before merging, this repository prioritizes keeping everything consolidated into a **single, unified `user.js` file**. It is ready to deploy immediately without making you jump through developmental hoops.
 
-## [Wiki](https://github.com/yokoffing/Better-Fox/wiki)
-Check out Betterfox [wiki](https://github.com/yokoffing/Better-Fox/wiki)!
+---
 
+## 👤 Who Is This Setup For?
 
-## Credit
-Where there is similiarity to other authors, credit goes to them.
+**If you want a secure, blazing-fast browsing experience without dealing with broken web elements, this setup is for you.** 
+
+The overriding principle here is: *"If it breaks it, it doesn't make it!"* Advanced and disruptive privacy configurations (like `privacy.resistFingerprinting`, WebGL disabling, or DRM blocks) are left untouched so that mainstream streaming apps (Netflix, YouTube), web games, and enterprise sites work flawlessly out of the box. It is smooth enough for daily use by anyone.
+
+---
+
+## ⚠️ Important Assumptions & Recommendations
+
+To maintain its "less-is-more" approach, this configuration makes a few baseline assumptions about your setup:
+*   **Google Safe Browsing is removed:** If you do not have native OS-level protection or hardware firewalls, review the code to comment out this section.
+*   **Native Password Manager is disabled:** It is highly recommended to transition to dedicated solutions like **Bitwarden** or **1Password**.
+*   **Content Blocking:** You should pair this file with extensions like **uBlock Origin** and use network-level protections like **NextDNS**.
+*   *Note: If your threat model demands absolute anonymity rather than practical privacy, please use the **Tor Browser** instead.*
+
+---
+
+## 🚀 Installation Guide
+
+### Manual Setup (Recommended)
+1. Download the `user.js` file from this repository to your local machine.
+2. Launch Firefox, type `about:support` in the URL search bar, and hit **Enter**.
+3. Locate the **Profile Folder** row and click the **Open Folder** button next to it.
+4. Drop your downloaded `user.js` file directly into this folder.
+5. **Restart** Firefox for the speed and security tweaks to take effect.
+
+---
+
+## 📖 Wiki & Credits
+*   For deep structural documentation, read through the upstream [Betterfox Wiki](https://github.com).
+*   All core credits go out to the original author [@yokoffing](https://github.com) and its wonderful community contributors.
+
+---
+
+## 📄 License
+This project is open-sourced software licensed under the [MIT License](LICENSE).
